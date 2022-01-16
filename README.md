@@ -14,7 +14,7 @@ Dans un premier temps, il convenait de récupérer les données de puces à ADN 
 
 2- Concenrant ce projet de TechnoWeb :
    ---------------------------------
-Nous avons présenté le projet en détaillant chaque étapes par du texte, nous avons aussi utilisé quelques images en appui.
+Nous avons présenté le projet en détaillant chaque étape par du texte, nous avons aussi utilisé quelques images en appui.
 Des hyperliens nous mènent également à des figures d'illustration qui ont été généré en amant par des outils de la plateforme Galaxy.
 
 3- Lancement :
