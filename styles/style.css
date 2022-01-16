@@ -1,0 +1,339 @@
+/* General */
+html body {
+  line-height: 1.5;
+  font-size: 1.8rem;
+  color: #212529;
+  min-height: 100%;
+  min-width: 320px;
+  font-family: "Roboto-Regular", sans-serif, sans-serif;
+  position: relative;
+  padding-top: 6rem;
+}
+
+html body footer {
+  margin-top: auto;
+}
+
+@media (min-width: 1024px) {
+  body {
+    padding-top: 10rem;
+  }
+}
+
+html {
+  min-height: 100%;
+  height: 100%;
+  font-size: 62.5%;
+}
+
+/* Corps */
+body {
+  background-color:antiquewhite;
+  padding: 10px 5px 10px 5px;
+}
+
+/* Entête */
+header {
+  background-color: #012e70;
+  color: #ccc;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 4px;
+  font-size: 30px;
+}
+
+/* Menu */
+nav::before {
+  content: "Menu";
+  position:absolute;
+  right:auto;
+  font-weight: bolder;
+  color: black;
+}
+
+#menu {
+  position: fixed;
+  top: 30%;
+  width: 250px;
+  display: flex;
+  padding:0;
+  background-color: #ccc;
+  justify-content: space-around;
+  box-shadow: 0px 0px 4px 4px rgba(100,20,20,0.6);
+}
+#menu li {
+  list-style-type: none ;
+
+}
+
+#menu a {
+  display:block;
+  min-width: 120px; 
+  margin: 0.5rem;         
+  padding: 4rem 0;           
+  text-align: center;            
+  background-color: #012e70;    
+  color: #fff;                
+  text-decoration: none;        
+  border: 1px solid #fff;       
+  border-radius: 4px;           /* Arrondis des bordures */
+  transition: all 1s ;          /* Ajout des effets de transition */
+}
+
+#menu ul {
+  padding-inline-start: 0;
+}
+
+#menu a:hover {
+  background-color: brown;
+  color: #ffe843;
+  border-color: #ffe843;
+}
+
+/* Conteneur de tout le texte */
+main {
+  padding-left: 300px;
+  padding-right: 30px;
+  font-size:medium;
+}
+
+/* Section */
+section {
+  margin-bottom: 10rem;
+}
+
+section {
+  background-color:cadetblue;
+  margin: 2%;
+  padding: 10px;
+}
+
+/* Article */
+article {
+  margin-bottom: 4rem;
+}
+
+/* Autres balises */
+
+h2 {
+  color: rgb(233, 10, 10);
+  text-align: center;
+  border: thin solid white;
+}
+
+h3, h4 {
+  border: thin solid white;
+  padding: 5px;
+  font-family: "Roboto-Medium", sans-serif;
+}
+
+p {
+  text-align: justify;
+  text-justify: inter-word;
+  margin-bottom: 2.5rem;
+  background-color: bisque;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  width: 95%;
+  padding: 10px;
+}
+
+p a {
+  font-family: "Roboto-Medium", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  font-style: oblique;
+  font-weight: bolder;
+}
+
+a:hover {
+  color: brown;
+}
+
+em {
+  font-family: "Roboto-Medium", sans-serif;
+  font-weight: 500;
+}
+
+figure img {
+  display: block;
+}
+
+figure figcaption, #figTitle {
+  font-family: "Roboto-Light", sans-serif;
+  font-style: italic;
+  font-size: 1.4rem;
+  color: white;
+}
+
+.annotation {
+  margin: auto;
+  width: 500px;
+  box-shadow: 0px 0px 4px 2px rgba(200,120,120,0.6);
+}
+
+.annotation img:hover {
+  box-shadow: 0px 0px 4px 4px rgba(100,20,20,0.6);
+  transform : scale(2.5);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.colonnes {
+  margin: auto;
+  width: 200px;
+  box-shadow: 0px 0px 4px 2px rgba(200,120,120,0.6);
+}
+
+.colonnes img:hover {
+  box-shadow: 0px 0px 4px 4px rgba(100,20,20,0.6);
+  transform : scale(2);
+}
+
+/* Images puces ADN */
+.dna-gallery {
+  display:inline-block;
+  vertical-align:top;
+  box-shadow: 0px 0px 4px 2px rgba(200,120,120,0.6);
+}
+
+.dna-gallery img:hover {
+  box-shadow: 0px 0px 4px 4px rgba(100,20,20,0.6);
+  transform : scale(4);
+}
+
+.dna-gallery-item figcaption, figcaption {
+  font-size: 1.4rem;
+  text-align: center;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .dna-gallery, .subject-gallery {
+    grid-template-columns: repeat(3, minmax(15rem, 30px));
+  }
+}
+
+@media (min-width: 1024px) {
+  .dna-gallery, .subject-gallery {
+    grid-template-columns: repeat(9, minmax(15rem, 50px));
+  }
+}
+
+.dna-gallery {
+  display: inline-block;
+  width: 75px;
+  height: 75px;
+}
+
+.dna-gallery {
+  display:inline-block;
+  vertical-align:top;
+  box-shadow: 0px 0px 4px 2px rgba(200,120,120,0.6);
+}
+
+.dna-gallery img:hover {
+  box-shadow: 0px 0px 4px 4px rgba(100,20,20,0.6);
+  transform : scale(4);
+}
+
+/* Autres balises */
+.tabular {
+  margin: auto;
+  width: 500px;
+  box-shadow: 0px 0px 4px 2px rgba(200,120,120,0.6);
+}
+
+.tabular img:hover {
+  box-shadow: 0px 0px 4px 4px rgba(100,20,20,0.6);
+  transform : scale(2.5);
+}
+
+strong {
+  font-family: "Roboto-Medium", sans-serif;
+  color: darkgreen;
+  font-weight:bolder;
+  font-style :italic;
+}
+
+.design {
+  margin: auto;
+  width: 300px;
+  box-shadow: 0px 0px 4px 2px rgba(200,120,120,0.6);
+}
+
+.design img:hover {
+  box-shadow: 0px 0px 4px 4px rgba(100,20,20,0.6);
+  transform : scale(2);
+}
+
+pre {
+  font-size: small;
+
+}
+
+/* Figures en slides */
+/* source : https://lesdocs.fr/slider-javascript/ */
+
+#slider {
+  position: relative;
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+#precedent, #suivant {
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+  position: absolute;
+  font-size: 100px;
+  color: rgba(220, 220, 220, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+}
+
+#precedent {
+  left: 0;
+}
+
+#suivant {
+  right: 0;
+}
+
+#slider:hover #precedent, #slider:hover #suivant {
+  opacity: 1;
+}
+
+#figTitle {
+  background-color: cadetblue;
+  text-align: center;
+}
+
+/* Autres balises */
+.venn {
+  margin: auto;
+  width: 200px;
+  box-shadow: 0px 0px 4px 2px rgba(200,120,120,0.6);
+}
+
+.venn img:hover {
+  box-shadow: 0px 0px 4px 4px rgba(100,20,20,0.6);
+  transform : scale(2);
+}
+
+/* Pieds de page */
+.footer {
+  background-color: #012e70;
+  color: #ccc;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 4px;
+}
+
